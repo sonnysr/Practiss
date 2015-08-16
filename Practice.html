@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practice</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type ="text/javascript" src="Practice.js"></script>
+<link rel="stylesheet" type-"text/css" href="Practice.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+</head>
+
+<body data-ng-app="my_app">
+
+
+
+<!-- <div data-ng-view></div> -->
+
+  <!-- TEST 1
+
+  <div ng-controller= "myCtrl">
+    <div class="phoneinfo" ng-repeat="info in phones">
+    <div class="product1"> <img class="productphoto" ng-src= {{info.imageUrl}}>{{info.fullName}}<span style="display:block;">{{info.price}}</span> 
+        <button ng-click="creat($index)">edit</button>
+        <button ng-click="delet($index)">delete</button>
+    </div>
+        
+    </div>
+    <input type="text" id="fullname" placeholder="Full Name">
+    <input type="text" id="shortname" placeholder="Short Name">
+    <input type="text" id="price" placeholder="Price">
+        <button ng-click="ad()">add</button>
+    </div>
+    </div>
+-->
+
+<!--
+<div ng-controller="controller1">
+<div class="body">
+<div class="container" style=width:50%>
+<div id="header">
+<h1>todos</h1>
+
+</div>
+
+<form ng-submit="caller($index)">
+<input ng-model="dude" class="form-controller1" placeholder="Enter a data"></form>
+
+<ul ng-repeat="storage in storageArray" class="form-controller1" id="storage1">
+
+<li class="li1">
+
+<input type="checkbox" ng-model="checkbox1">
+<span ng-class="{'check' :checkbox1}">{{storage}}</span>
+<button ng-click1="click($i)">x</button>
+
+
+
+
+</li>
+
+
+
+
+
+</ul>
+
+
+
+</div>
+
+</div>
+
+
+
+
+<h1>todos</h1>
+    <div ng-controller="TodoCtrl">
+      <form>
+        <input placeholder="What needs to be done?" type="text" ng-model="formTodolist" />
+        <button ng-click="addTodo(formTodolist)">Add</button>{{todo.name}}
+        </form>
+          <h2>Lists:</h2>
+          <ul style="list-style:none;">
+       <li ng-repeat="todo in todos | filter: dude">
+          <input type="checkbox" ng-model="todo.sate"/>
+          <span class="done-{{todo.sate}}">{{todo.name}}</span>
+          <button ng-click="deleteThis($index)">Delete</button>
+        </li>
+      </ul>
+   
+       
+       <a href="#" ng-click='all()'><h3>All</h3></a>{{todos.length}}
+       <a href="#" ng-click='pending()'><h3>Active</h3></a>{{remaining()}}
+       <a href="#" ng-click='complet()'><h3>Completed</h3></a>{{todos.length-remaining()}}
+      </div> 
+
+  <!-- SHOP CART
+
+<div ng-controller='test1'>
+  <select>
+       <option ng-repeat="list in lists track by $index" ng-click="push2($index)">{{list.name}}&nbsp;&nbsp;&nbsp;{{list.price|currency}}</li>
+  </select>
+  <h3>purched items</h3>
+  <ul>
+       <li ng-repeat="item in items track by $index" >{{item.name}}&nbsp;&nbsp;&nbsp;{{item.price|currency}}
+       </li>
+  </ul>
+  <h3>total Items</h3>
+  {{items.length}}
+  <h3>total price</h3>
+ <br>
+       <li>{{add|currency}}</li>
+  
+ 
+  </div>
+
+-->
+
+<!--
+<div ng-controller="ctrl1">
+<div ng-show="hider">
+Question: {{ x[ind].question }}<br>
+A. {{ x[ind].optionA }}<br>
+B. {{ x[ind].optionB }}<br>
+C. {{ x[ind].optionC }}<br>
+D. {{ x[ind].optionD }}<br>
+<button ng-click="next()">Next Question</button>
+</div>
+
+<div ng-hide="hider">
+
+You answered {{ "c" }} of {{ x.length }} questions correct!
+
+<br>
+
+<button ng-click="resurn()">Return</button>
+
+</div>
+
+</div>
+
+-->
+
+<!-- planetSORTER 
+
+<div ng-controller="ctrl1">
+<label>Hello : <input type="text" ng-model="fname"> </label>
+<button ng-click="ad()">Save</button>
+<br>
+<select ng-model="bmt(y)" multiple style="width:100px" >
+	<option title="hello" ng-repeat="x in product | planetSorter" style="width:800px">
+		{{ x }}
+	</option>
+</select><br>
+<p> 
+
+	{{  }} &nbsp; {{ vlue }}
+
+	</p>   
+</div>
+
+<!-- Placeholder for views
+	<div>
+
+
+		<div ng-view>
+		</div>
+	</div>
+
+	<!--
+
+<div ng-controller="ctrl1">
+
+<input type="text" ng-model="fud">
+
+</br>
+
+<ul>
+<li ng-repeat="z in customers | orderBy: 'name' | filter:fud "> 
+	{{ z.name | uppercase }} {{ z.city | lowercase }}
+</li>
+</ul>
+
+</div>
+
+
+<!--
+
+<div id="sales" ng-init='customers=[{name:"John Smith" , city:"Indiana"}, {name:"Dee Poli" , city:"Bal Purian"}, {name:"Stuntsa Randhawa", city:"Bakersfield"}]'>
+
+<ul>
+<li data-ng-repeat="z in customers | orderBy: 'name' "> {{ z.name | uppercase }}
+</li>
+
+<li data-ng-repeat="z in customers | filter:fud | orderBy: 'city' "> {{ z.name | uppercase }}, {{ z.city | lowercase }}
+</li>
+</ul>
+
+</div>
+-->
+
+</body>
+</html>
